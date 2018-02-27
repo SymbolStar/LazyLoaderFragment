@@ -12,6 +12,8 @@ Android  Fragment 懒加载
 * setUserVisibleHint(boolean isVisibleToUser) 在fragment 显示到当前页面和离开当前页面的时候会回调次方法
 在当前页面isVisibleToUser 为 true
 
+`注意fragment的生命周期 代码中回调方法都有log`
+
 
 实现逻辑就是没有实例化一开始的时候全部显示懒加载的界面，数据加载结束之后在懒加载的view替换掉
 
